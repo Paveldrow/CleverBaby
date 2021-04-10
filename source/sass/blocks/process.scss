@@ -1,0 +1,152 @@
+.process {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 130px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.process__title {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.process__subtitle {
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 250px;
+
+    &--text {
+      width: 240px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.process__text {
+  max-width: 414px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 283px;
+  }
+}
+
+.process__column-text {
+  margin-right: 86px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 41px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+  }
+}
+
+.process__video {
+  position: relative;
+  width: 431px;
+  height: 231px;
+  border-radius: 12px;
+  background-image: url('../../img/video-background-desktop.png');
+  margin-bottom: 130px;
+
+  @media (max-width: $tablet-width) {
+    width: 354px;
+    height: 267px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    height: 262px;
+  }
+
+}
+
+.process__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: 0.5s;
+  }
+}
+
+.process__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-image: url('./../img/background-process-list.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+
+  @media (max-width: $tablet-width) {
+    background-image: url('../../img/background-process-list-tablet.jpg');
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url('../../img/background-process-list-mobile.jpg');
+  }
+}
+
+.process__item {
+  box-sizing: border-box;
+  width: 50%;
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
+
+  &:nth-child(odd) {
+    margin-bottom: 115px;
+    padding-top: 81px;
+    padding-right: auto;
+  }
+
+  &:nth-child(even) {
+    padding-top: 35px;
+    padding-left: auto;
+  }
+
+  // &:nth-child(3) {
+  //   padding-top: 185px;
+  // }
+
+  // &:nth-child(4) {
+  //   margin-left: auto;
+  //   padding-top: 115px;
+  // }
+}

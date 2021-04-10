@@ -1,0 +1,26 @@
+.main-nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__item {
+  margin-right: 20px;
+}
+
+.main-nav__link {
+  line-height: 22px;
+  font-size: 16px;
+  color: $text-color;
+
+  @media (max-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,91 @@
+.main-block {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 38vw;
+  padding-top: 135px;
+  padding-left: 198px;
+  background-image: url('./../img/icon-cloud.svg'), url("./../img/icon-car.svg"), url("./../img/main-block-background.jpg");
+  background-size: 91px 62px, 106px 84px, cover;
+  background-repeat: no-repeat;
+  background-position: right 83px top 65px, 64px 37px, 0 0;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 92px;
+    padding-left: 45px;
+    background-image: url("./../img/icon-car.svg"), url("./../img/main-block-background.jpg");
+    background-size: 58px 46px, cover;
+    background-position: 10px 31px, 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: auto;
+    padding-top: 60px;
+    padding-left: 25px;
+    padding-bottom: 60px;
+    background-color: $main-block-background-mobile;
+    background-image: url("./../img/icon-car.svg");
+    background-size: 48px 38px;
+    background-position: 3px 12px;
+  }
+}
+
+.main-block__wrapper {
+  width: 375px;
+
+  @media (max-width: $mobile-width) {
+    width: 243px;
+  }
+}
+
+.main-block__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 59px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 12px;
+  }
+}
+
+.main-block__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.main-block__discription {
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
+}

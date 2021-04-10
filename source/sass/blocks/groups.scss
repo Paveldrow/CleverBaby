@@ -1,0 +1,26 @@
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("./img/background-group.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.groups__title {
+  width: 40%;
+}
+
+.groups__text {
+  width: 298px;
+  margin-left: auto;
+}
+
+.groups__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

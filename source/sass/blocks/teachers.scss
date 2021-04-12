@@ -1,0 +1,93 @@
+.teachers {
+  margin-bottom: 135px;
+  padding-top: 141px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 84px;
+    margin-bottom: 115px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 55px;
+    margin-bottom: 32px;
+  }
+}
+
+.teachers__slider-wrapper {
+  overflow: hidden;
+  width: 970px;
+  margin-bottom: 37px;
+
+  @media (max-width: $tablet-width) {
+    width: 680px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
+}
+
+.teachers__list {
+  margin-bottom: 0;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.teachers__item {
+  flex-shrink: 0;
+  text-align: center;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.teachers__img {
+  width: 220px;
+  height: 219px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    height: 205px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    height: 232px;
+  }
+}
+
+.teachers__name {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.teachers__location {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: $location-text-color;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

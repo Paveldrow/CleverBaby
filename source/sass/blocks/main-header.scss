@@ -1,11 +1,20 @@
 .main-header {
-  padding-top: 40px;
+  padding-top: 39px;
   padding-right: 98px;
   padding-left: 98px;
+  padding-bottom: 39px;
 
   @media (max-width: $tablet-width) {
+    padding-top: 28px;
     padding-right: 45px;
     padding-left: 45px;
+    padding-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-left: 15px;
   }
 }
 
@@ -18,16 +27,22 @@
   display: block;
   width: 143px;
   height: 23px;
-  margin-right: 52px;
+  margin-right: 57px;
 
   @media (max-width: $tablet-width) {
     width: 132px;
     height: 21px;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 111px;
+    height: 17px;
+  }
 }
 
 .main-header__phone {
   margin-left: auto;
+  margin-right: 3px;
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
@@ -36,6 +51,10 @@
   @media (max-width: $mobile-width) {
     display: none;
   }
+}
+
+.main-header__phone-icon {
+  margin-right: 5px;
 }
 
 .main-header__toggle {
@@ -47,6 +66,10 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 15px;
   }
 }
 

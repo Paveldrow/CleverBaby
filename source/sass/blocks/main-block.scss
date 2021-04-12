@@ -2,24 +2,25 @@
   box-sizing: border-box;
   width: 100vw;
   height: 38vw;
-  padding-top: 135px;
+  padding-top: 126px;
   padding-left: 198px;
   background-image: url('./../img/icon-cloud.svg'), url("./../img/icon-car.svg"), url("./../img/main-block-background.jpg");
   background-size: 91px 62px, 106px 84px, cover;
   background-repeat: no-repeat;
-  background-position: right 83px top 65px, 64px 37px, 0 0;
+  background-position: right 83px top 65px, 64px 37px, -17px -7px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 92px;
+    height: 441px;
+    padding-top: 82px;
     padding-left: 45px;
-    background-image: url("./../img/icon-car.svg"), url("./../img/main-block-background.jpg");
+    background-image: url("./../img/icon-car.svg"), url("./../img/main-block-background-tablet.jpg");
     background-size: 58px 46px, cover;
     background-position: 10px 31px, 0 0;
   }
 
   @media (max-width: $mobile-width) {
     height: auto;
-    padding-top: 60px;
+    padding-top: 53px;
     padding-left: 25px;
     padding-bottom: 60px;
     background-color: $main-block-background-mobile;
@@ -39,11 +40,10 @@
 
 .main-block__title {
   margin: 0;
-  margin-bottom: 15px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 500;
   font-size: 42px;
-  line-height: 59px;
+  line-height: 50px;
 
   @media (max-width: $mobile-width) {
     font-size: 28px;
@@ -51,13 +51,13 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 }
 
 .main-block__subtitle {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   font-family: "Rubik", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -69,13 +69,13 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 }
 
 .main-block__discription {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 39px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -86,6 +86,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }

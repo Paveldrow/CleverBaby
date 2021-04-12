@@ -1,26 +1,112 @@
 .groups {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background-image: url("./img/background-group.png");
+  padding-bottom: 150px;
+  padding-top: 174px;
+  background-image: url('../../img/background-group.png');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 128px;
+    padding-bottom: 120px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: none;
+    background-color: $groups-background;
+  }
 }
 
-.groups__title {
-  width: 40%;
-}
-
-.groups__text {
-  width: 298px;
-  margin-left: auto;
-}
-
-.groups__list {
+.groups__item {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  width: 296px;
+  margin-right: 41px;
+  padding-top: 43px;
+  padding-bottom: 50px;
+  border-radius: 12px;
+  border: 2px solid $special-color-1;
+  text-align: center;
+
+  &--once {
+    border-color: $special-color-2;
+  }
+
+  &--triple {
+    border-color: $special-color-3;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 30px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 290px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.groups__subtitle {
+  margin-bottom: 26px;
+  font-size: 20px;
+  line-height: 28px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.groups__sublist {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.groups__subitem {
+  margin-bottom: 9px;
+}
+
+.groups__price {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.groups__price-value {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.groups__button {
+  @media (max-width: $tablet-width) {
+    width: 155px;
+    height: 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 152px;
+    font-size: 16px;
+    line-height: 22;
+  }
 }

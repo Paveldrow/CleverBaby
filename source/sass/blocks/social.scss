@@ -1,0 +1,20 @@
+.social__list {
+  display: flex;
+  margin: 0;
+  padding: 0;list-style: none;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $white;
+  box-shadow: 0px 2px 10px rgba(165, 168, 176, 0.1);
+}

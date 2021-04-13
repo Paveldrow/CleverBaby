@@ -55,14 +55,27 @@ padding-bottom: 50px;
   background-image: url('../../img/map.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $map-background;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/map@2x.png');
+  }
 
   @media (max-width: $tablet-width) {
     height: 438px;
     background-image: url('../../img/map-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/map-tablet@2x.png');
+    }
   }
 
   @media (max-width: $mobile-width) {
     height: 261px;
     background-image: url('../../img/map-mobile.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/map-mobile@2x.png');
+    }
   }
 }
